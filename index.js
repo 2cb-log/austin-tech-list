@@ -17,6 +17,14 @@
   // THE LIST STARTS HERE
   return [
     {
+      name: 'Aunt Bertha',
+      homepage: 'https://www.auntbertha.com/',
+      careers: 'https://www.auntbertha.com/',
+      address: '3429 Executive Center Dr, Austin, TX 78731',
+      plusCode: '9753+F3 Austin, Texas',
+    },
+
+    {
       name: 'Bloomfire',
       homepage: 'https://bloomfire.com/',
       careers: 'https://bloomfire.com/about-us/careers/',
@@ -41,11 +49,27 @@
     },
 
     {
+      name: 'HomeAway',
+      homepage: 'https://www.homeaway.com/',
+      careers: 'https://www.homeaway.com/careers/openings/',
+      address: '11800 Domain Blvd #300, Austin, TX 78758',
+      plusCode: 'C73H+V9 Austin, Texas',
+    },
+
+    {
       name: 'Keet Health',
       homepage: 'https://www.keethealth.com/',
       careers: 'https://www.keethealth.com/jobs/',
       address: '200 E 6th St #206, Austin, TX 78701',
       plusCode: '7795+4H Austin, Texas',
+    },
+
+    {
+      name: 'Khan Academy',
+      homepage: 'https://www.khanacademy.org/',
+      careers: 'https://www.khanacademy.org/jobs/',
+      address: 'Remote',
+      plusCode: '',
     },
 
     {
