@@ -17,8 +17,8 @@ test('entries only contain required keys', () => {
 })
 
 test('entries are in alphabetical order by name', () => {
-  const sorted = [...austinTechList].sort(
-    (a, b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase())
+  const sorted = [...austinTechList].sort((a, b) =>
+    a.name.toLowerCase().localeCompare(b.name.toLowerCase())
   )
 
   austinTechList.forEach((entry, index) => {
@@ -36,7 +36,10 @@ test('addresses are in Austin with ZIP codes or Remote', () => {
 test('plus codes are valid', () => {
   const regex = /^[23456789CFGHJMPQRVWX]{4}\+[23456789CFGHJMPQRVWX]{2} Austin, Texas$/
   austinTechList.forEach(entry => {
-    expect(regex.test(entry.plusCode) || (entry.plusCode === '' && entry.address === 'Remote')).toBe(true)
+    expect(
+      regex.test(entry.plusCode) ||
+        (entry.plusCode === '' && entry.address === 'Remote')
+    ).toBe(true)
   })
 })
 
@@ -45,7 +48,6 @@ test('urls are url-like', () => {
   austinTechList.forEach(entry => {
     expect(regex.test(entry.homepage)).toBe(true)
     // Link to careers page is the only entry allowed to be empty
-    expect(entry.careers === '' || regex.test(entry.careers))
-      .toBe(true)
+    expect(entry.careers === '' || regex.test(entry.careers)).toBe(true)
   })
 })
